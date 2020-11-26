@@ -23,6 +23,6 @@ public class Demo {
         score/=2;
         System.out.println("score " + score + " lives " + lives);
         coinCount+=40;
-        System.out.println("coint count " + coinCount);
+//        System.out.println("coint count " + coinCount);
     }
 }
