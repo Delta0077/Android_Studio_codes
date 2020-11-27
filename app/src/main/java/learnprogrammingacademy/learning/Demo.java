@@ -3,8 +3,24 @@ package learnprogrammingacademy.learning;
 import java.sql.SQLOutput;
 
 public class Demo {
-    static int lives=3;
-   // static int score;// 0 by default
+
+
+
+
+
+   /* static int [] names = new int[4];// Initialising empty array with 4 elements// index always starts at 0*/
+    static String[] pets= {"sparrow","parrot","crow"};
+    static int [] [] table = new int[3][3];
+    //asymmetrical array
+  /*  static String [] [] myArray={
+            new String[] {"One ", "Two"}, //1st row has 2 elements
+            new String[] {"Three", "Four", " Five"} // 2nd row has 3 elements*
+    };
+
+
+
+    /* static int lives=3;
+    static int score;// 0 by default
     static int coinCount = 90;
     //static boolean gameOver; // false by default
 
@@ -14,7 +30,33 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        while (lives > 0) {
+
+
+
+
+      /*  System.out.println("pets-size " + pets.length);
+        System.out.println("pets[0]" + pets[0]);
+        System.out.println("pets[1]" + pets[1]);
+        System.out.println("pets[2]" + pets[2]);
+      //  System.out.println("pets[3]" + pets[3]);// throws array index out of bounds
+        table[1] [1]=10;
+        table[2] [2]=70;
+        table[0] [0]=49;
+        table[0] [1]=98;
+
+
+        //table[3] [3]=80;//throws array index out of bounds
+        System.out.println("table[1][1] " + table[1][1]);
+        System.out.println("table[2][2] " + table[2][2]);
+        System.out.println("table[0][0] " + table[0][0]);
+        System.out.println("table[0][1] " + table[0][1]);
+
+
+
+
+
+
+     /*   while (lives > 0) {
             System.out.println("lives " + lives);
             lives--;
         }
