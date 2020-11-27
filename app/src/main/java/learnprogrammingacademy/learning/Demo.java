@@ -21,7 +21,7 @@ public class Demo {
         lives=3; //resetting lives to 3 do-while executes 3 times/if we don't reset lives the do-while loop will execute once as per order of previous while loop:)
 
         do{
-            System.out.println(("lives " + lives));
+            System.out.println("lives " + lives);
             coinCount+=20;
             lives--;
         } while (lives > 0);
