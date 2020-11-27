@@ -4,9 +4,9 @@ import java.sql.SQLOutput;
 
 public class Demo {
     static int lives=3;
-    static int score;// 0 by default
+   // static int score;// 0 by default
     static int coinCount = 90;
-    static boolean gameOver; // false by default
+    //static boolean gameOver; // false by default
 
    /* static int itemCount = 24;
     static int itemsPerPage = 5;*/
@@ -14,7 +14,21 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        score+= 10;
+        while (lives > 0) {
+            System.out.println("lives " + lives);
+            lives--;
+        }
+        lives=3; //resetting lives to 3 do-while executes 3 times/if we don't reset lives the do-while loop will execute once as per order of previous while loop:)
+
+        do{
+            System.out.println(("lives " + lives));
+            coinCount+=20;
+            lives--;
+        } while (lives > 0);
+
+        System.out.println("coins " + coinCount + " lives " + lives);
+
+       /* score+= 10;
         coinCount = 110; // re-initialising
        // lives = 0;
 
