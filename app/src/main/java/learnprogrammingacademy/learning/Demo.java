@@ -20,6 +20,29 @@ import java.sql.SQLOutput;
 
      public static void main(String[] args) {
 
+         //create array of strings that represents names of people
+         //print all strings/ names that start with capital letter T in uppercase
+         // find method in string class that checks if string starts with another string
+
+        /* String people[] = {"Aditya", "Andindya", "Avishek", "Tanmay", "Tomal"};
+
+         //for each
+         for(String person: people){
+             if(person.startsWith("T")){
+                 System.out.println("person " + person.toUpperCase());
+             }
+         }
+         //for loop
+         for (int i = 0; i<people.length; i++) {
+             String person = people[i];
+
+             if (person.startsWith("T")) {
+                 System.out.println("person " + person.toUpperCase());
+             }
+         }
+
+
+
          /*String dog = "Dog";
          String dog2 = new String(new char[]{'D','o','g'});
 
