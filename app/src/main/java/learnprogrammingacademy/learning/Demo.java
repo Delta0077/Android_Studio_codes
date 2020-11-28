@@ -19,6 +19,25 @@ import java.sql.SQLOutput;
 
 
      public static void main(String[] args) {
+
+         //Break and continue statement use
+       /*  String [] animals = {"Dog","Cat","Lizard","Bird","Snake"};
+         for(String animal: animals) {
+             if (animal.equals("Lizard")) {
+                break;
+             }
+             System.out.println(animal);
+         }
+            //break jumps here
+         System.out.println("Continue");
+
+         for(String animal: animals){
+             if(animal.equals("Lizard")){
+                 continue;
+             }
+             System.out.println(animal);
+         }
+
          //my own code for challenge
         /* int sum=0;
          for(int i =1; i<=100; i++)
@@ -28,7 +47,7 @@ import java.sql.SQLOutput;
 
          }*/
          //while
-         int number = 1;
+      /*   int number = 1;
          int sum = 0;
          while(number<=100){
              sum+= number;
@@ -76,6 +95,6 @@ import java.sql.SQLOutput;
 
                         System.out.println("number = " + table[row][column]);
 
-                }*/
+                 }*/
     }
 }
