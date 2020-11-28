@@ -35,6 +35,11 @@ import java.sql.SQLOutput;
 
 
                 }
-                    
+                for(int row = 0; row< table.length; row++){
+                    for(int column =0; column< table[row].length; column++)
+
+                        System.out.println("number = " + table[row][column]);
+
+                }
     }
 }
