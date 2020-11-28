@@ -7,19 +7,59 @@ import java.sql.SQLOutput;
 
 
 
-     static String[] pets= {"sparrow","parrot","crow"};
+
+
+    /* static String[] pets= {"sparrow","parrot","crow"};
      static int [] [] table = {
 
              {1,2,3},
              {4,5,6,11},
              {7,8,9}
-     };
+     };*/
 
 
      public static void main(String[] args) {
+        /* int sum=0;
+        //my own code for challenge
+         for(int i =1; i<101; i++){
+             sum+=i;
+
+             System.out.println("Sum = " +sum );
+
+         }*/
+         //while
+         int number = 1;
+         int sum = 0;
+         while(number<=100){
+             sum+= number;
+             number++;
+         }
+         System.out.println("Sum " + sum);
+         //do-while
+         number = 1;
+         sum = 0;
+         do {
+             sum+=number;
+             number++;
+         } while(number<=100);
+         System.out.println(" sum = " + sum);
 
 
-            for(int i = 0; i<pets.length;i++)
+         //for loop
+         sum = 0;
+
+         for(int i = 1;i<=100; i++)
+            sum+=i;
+         {
+             System.out.println(" sum " + sum);
+         }
+
+
+
+             // System.out.println("Enter range" + n);
+
+
+       /*     for(int i = 0; i<pets.length;i++)
             {
                 //1st iteration i = 0
                 //2nd iteration i = 1
@@ -40,6 +80,6 @@ import java.sql.SQLOutput;
 
                         System.out.println("number = " + table[row][column]);
 
-                }
+                }*/
     }
 }
