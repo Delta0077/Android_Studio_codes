@@ -5,6 +5,9 @@ import java.sql.SQLOutput;
     public class Demo {
 
 
+        static String person;//null by default
+        static int lives;
+        static String pet;
 
 
 
@@ -19,6 +22,27 @@ import java.sql.SQLOutput;
 
 
      public static void main(String[] args) {
+
+
+         System.out.println("person " + person);
+
+         person="John";
+         person= person.toUpperCase();
+         System.out.println("person " + person);
+
+         String anotherPerson="";
+
+         System.out.println("anotherPerson " + anotherPerson);
+         System.out.println("anotherPerson null = " + (anotherPerson ==null));
+         System.out.println("anotherPerson empty = " + anotherPerson.isEmpty());
+
+         //debugging
+         pet="Dog";
+         System.out.println("Pet is null= " +(pet==null));
+         String dog = pet.toUpperCase();
+         System.out.println("dog= " + dog);
+
+
 
          //create array of strings that represents names of people
          //print all strings/ names that start with capital letter T in uppercase
