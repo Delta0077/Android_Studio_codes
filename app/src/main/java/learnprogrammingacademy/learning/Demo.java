@@ -20,7 +20,7 @@ import java.sql.SQLOutput;
 
      public static void main(String[] args) {
 
-         String dog = "Dog";
+         /*String dog = "Dog";
          String dog2 = new String(new char[]{'D','o','g'});
 
          System.out.println("dog == dog2 => "+ (dog == dog2));
@@ -123,6 +123,6 @@ import java.sql.SQLOutput;
 
                         System.out.println("number = " + table[row][column]);
 
-                 }
+                 }*/
     }
 }
