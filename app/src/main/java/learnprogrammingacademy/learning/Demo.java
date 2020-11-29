@@ -5,9 +5,12 @@ import java.sql.SQLOutput;
     public class Demo {
 
 
-        static String person;//null by default
+
+
+
+       /* static String person;//null by default
         static int lives;
-        static String pet;
+        static String pet;*/
 
 
 
@@ -24,7 +27,26 @@ import java.sql.SQLOutput;
      public static void main(String[] args) {
 
 
-         System.out.println("person " + person);
+         System.out.println("isTrue = " + isTrue());
+
+         int number = getInt();
+         System.out.println("number = " +number);
+
+         number = increment(number);
+         System.out.println("number =" + number);
+
+         number = sum(number,3);
+         System.out.println("number = " + number);
+
+         printSum(2,5);
+         printSum(3,6);
+
+
+
+
+
+
+        /* System.out.println("person " + person);
 
          person="John";
          person= person.toUpperCase();
@@ -172,4 +194,27 @@ import java.sql.SQLOutput;
 
                  }*/
     }
+        private static int getInt() {
+            //return false doesn't compile
+            return 10;
+        }
+
+        private static boolean isTrue() {
+            return 5<10; // using expressions with return statement
+        }
+        private static int increment(int number)    {
+            return number+1;
+        }
+        private static int sum(int a, int b)    {
+         return a+b;
+        }
+        private static void printSum(int a, int b)  {
+            System.out.println(a + " + " + b + " = " +(a+b));
+           // return;//optional in void methods
+        }
+
+
+
+
+
 }
