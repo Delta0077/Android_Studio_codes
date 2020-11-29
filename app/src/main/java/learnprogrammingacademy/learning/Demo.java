@@ -27,7 +27,7 @@ import java.sql.SQLOutput;
      public static void main(String[] args) {
 
 
-         System.out.println("isTrue = " + isTrue());
+        /* System.out.println("isTrue = " + isTrue());
 
          int number = getInt();
          System.out.println("number = " +number);
@@ -194,7 +194,7 @@ import java.sql.SQLOutput;
 
                  }*/
     }
-        private static int getInt() {
+       /* private static int getInt() {
             //return false doesn't compile
             return 10;
         }
@@ -211,7 +211,7 @@ import java.sql.SQLOutput;
         private static void printSum(int a, int b)  {
             System.out.println(a + " + " + b + " = " +(a+b));
            // return;//optional in void methods
-        }
+        }*/
 
 
 
