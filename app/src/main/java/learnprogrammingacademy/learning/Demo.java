@@ -27,6 +27,19 @@ import java.sql.SQLOutput;
      public static void main(String[] args) {
 
 
+
+         int result = subtract(9, 2);
+
+         System.out.println("Result = " + result);
+         result = subtract(9,7,6);
+         System.out.println(" Result1 = " +result);
+
+         result = mul(9, 5);
+         System.out.println("mul(int a, int b = " +result);
+
+         float floatresult = mul(2.5f , 3.5f);
+         System.out.println(" mul (2.5 , 3.5 ) = " +floatresult);
+
         /* System.out.println("isTrue = " + isTrue());
 
          int number = getInt();
@@ -212,8 +225,19 @@ import java.sql.SQLOutput;
             System.out.println(a + " + " + b + " = " +(a+b));
            // return;//optional in void methods
         }*/
-
-
+        //Method Overloading
+        private static int subtract(int a , int b){
+            return a-b;
+        }
+        private static int subtract(int a ,int b , int c){
+            return a - b - c;
+        }
+        private static int mul(int a , int b){
+            return a * b;
+        }
+        private static float mul(float a, float b){
+            return a * b;
+        }
 
 
 
