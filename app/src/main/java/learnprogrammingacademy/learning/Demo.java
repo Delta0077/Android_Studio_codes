@@ -27,8 +27,19 @@ import java.sql.SQLOutput;
      public static void main(String[] args) {
 
 
+        /* int result = sum(5 , 4);
+         System.out.println(" Sum (a + b) = " + result);
 
-         int result = subtract(9, 2);
+         result = sum(5 , 8 ,8);
+         System.out.println(" Sum (a + b + c) = " +result);
+
+         result = sum(3 , 2 , 5 , 10);
+         System.out.println(" Sum (a + b + c + d) = " +result);*/
+
+
+
+
+        /* int result = subtract(9, 2);
 
          System.out.println("Result = " + result);
          result = subtract(9,7,6);
@@ -38,7 +49,7 @@ import java.sql.SQLOutput;
          System.out.println("mul(int a, int b = " +result);
 
          float floatresult = mul(2.5f , 3.5f);
-         System.out.println(" mul (2.5 , 3.5 ) = " +floatresult);
+         System.out.println(" mul (2.5 , 3.5 ) = " +floatresult);*/
 
         /* System.out.println("isTrue = " + isTrue());
 
@@ -226,7 +237,7 @@ import java.sql.SQLOutput;
            // return;//optional in void methods
         }*/
         //Method Overloading
-        private static int subtract(int a , int b){
+      /*  private static int subtract(int a , int b){
             return a-b;
         }
         private static int subtract(int a ,int b , int c){
@@ -237,7 +248,21 @@ import java.sql.SQLOutput;
         }
         private static float mul(float a, float b){
             return a * b;
+        }*/
+
+        //Over loading challenge
+       /* private static int sum(int a, int b){
+            return a + b;
         }
+        private static int sum(int a , int b ,int c){
+            return a + b + c;
+        }
+        private static int sum(int a , int b ,int c , int d) {
+            return a + b + c + d;
+        }*/
+
+
+
 
 
 
