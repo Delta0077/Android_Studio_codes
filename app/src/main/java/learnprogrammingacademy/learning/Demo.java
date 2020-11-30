@@ -2,6 +2,42 @@ package learnprogrammingacademy.learning;
 
 import java.sql.SQLOutput;
 
+    //Constructor
+    class Dog{
+        private String color;
+
+        public Dog(String color){
+           // color = color; // assignment to same variable
+            this.color = color;
+        }
+
+        //public dog(){} //method must have return type
+       // public void Dog() {}//this is method not a constructor
+
+        public void printColor(){
+            System.out.println("color = " +color);//This keyword is optional since we don't have parameter with same name
+        }
+
+
+    }
+        class Cat {
+            private String name;
+            private int age;
+
+            public Cat() {                          //1st constructor
+              this("Tom" , 3);
+            }
+            public Cat(String name , int age) {  //2nd constructor
+                this.name = name;
+                this.age = age;
+            }
+
+            public void printInfo(){
+                System.out.println("name = " + name + " age = " + age);
+            }
+
+        }
+
     public class Demo {
 
 
@@ -25,6 +61,10 @@ import java.sql.SQLOutput;
 
 
      public static void main(String[] args) {
+
+
+
+
 
 
         /* int result = sum(5 , 4);
@@ -217,8 +257,29 @@ import java.sql.SQLOutput;
                         System.out.println("number = " + table[row][column]);
 
                  }*/
-    }
-       /* private static int getInt() {
+
+        Dog dog = new Dog( "gray");
+        dog.printColor();
+
+        Dog dog2 = new Dog("black");
+        dog2.printColor();
+
+        Cat cat = new Cat();
+        cat.printInfo();
+
+        Cat cat2 = new Cat("Jerry" , 5);
+        cat2.printInfo();
+
+     }
+
+
+
+
+
+
+
+
+    /* private static int getInt() {
             //return false doesn't compile
             return 10;
         }
