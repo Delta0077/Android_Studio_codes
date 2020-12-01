@@ -113,27 +113,18 @@ package learnprogrammingacademy.learning;
 
         Player player = new Player();
 
-        //player.health -=100;
+
         player.reduceHealth(100);
         player.printInfo();
 
 
-       /* if(player.health <= 0){
-            player.health = 0;
-            player.alive = false;
 
-        }
-         System.out.println(" player health = " + player.health);*/
 
          player.reduceHealth(100);
          player.printInfo();
 
-        /* if(player.health <= 0) {
-             player.health = 0;
-             player.alive = false;
-         }
-
-         System.out.println("player health = " + player.health);*/
+         player.respawn();
+         player.printInfo();
 
 
         /* int result = sum(5 , 4);
