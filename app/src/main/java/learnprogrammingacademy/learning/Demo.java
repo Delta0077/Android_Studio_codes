@@ -98,9 +98,7 @@ import java.sql.SQLOutput;
 
          System.out.println("player health = " + player.health);
 
-
-
-
+         
         /* int result = sum(5 , 4);
          System.out.println(" Sum (a + b) = " + result);
 
