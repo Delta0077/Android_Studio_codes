@@ -41,7 +41,7 @@ package learnprogrammingacademy.learning;
 
         }*/
 
-    class Player {
+ /*  class Player {
 
         private int health = 150;
         private boolean alive = true;
@@ -84,7 +84,19 @@ package learnprogrammingacademy.learning;
         public void printInfo() {
             System.out.println("Player health = " + health + " alive =" + alive);
         }
-    }
+    }*/
+    class ship{
+        private int hitpoints = 100;
+        private String [] bullets = {"laser", "fire"};
+
+     public int getHitpoints() {
+         return hitpoints;
+     }
+
+     public void fire() {
+         if()
+     }
+ }
 
 
     public class Demo {
@@ -111,7 +123,8 @@ package learnprogrammingacademy.learning;
 
      public static void main(String[] args) {
 
-        Player player = new Player();
+
+         /* Player player = new Player();
 
 
         player.reduceHealth(100);
@@ -124,7 +137,7 @@ package learnprogrammingacademy.learning;
          player.printInfo();
 
          player.respawn();
-         player.printInfo();
+         player.printInfo();*/
 
 
         /* int result = sum(5 , 4);
@@ -137,9 +150,7 @@ package learnprogrammingacademy.learning;
          System.out.println(" Sum (a + b + c + d) = " +result);*/
 
 
-
-
-        /* int result = subtract(9, 2);
+         /* int result = subtract(9, 2);
 
          System.out.println("Result = " + result);
          result = subtract(9,7,6);
@@ -330,14 +341,8 @@ package learnprogrammingacademy.learning;
         Cat cat2 = new Cat("Jerry" , 5);
         cat2.printInfo();*/
 
+
      }
-
-
-
-
-
-
-
 
     /* private static int getInt() {
             //return false doesn't compile
@@ -382,9 +387,4 @@ package learnprogrammingacademy.learning;
             return a + b + c + d;
         }*/
 
-
-
-
-
-
-}
+    }
