@@ -85,18 +85,45 @@ package learnprogrammingacademy.learning;
             System.out.println("Player health = " + health + " alive =" + alive);
         }
     }*/
-    class ship{
-        private int hitpoints = 100;
-        private String [] bullets = {"laser", "fire"};
+
+    //Encapsulation
+    class Ship {
+     private int hitpoints = 100;
+     private String[] bullets = {"laser", "fire"};
 
      public int getHitpoints() {
          return hitpoints;
      }
 
      public void fire() {
-         if()
+         /*
+         if (hitpoints <= 50) {
+             System.out.println("firing " + bullets[0]);
+         } else {
+             System.out.println("firing " + bullets[1]);
+         }
+            */
+         String bullet = bullets[0];
+
+         if(hitpoints > 50) {
+             bullet = bullets[1];
+         }
+         System.out.println("firing " + bullet);
+     }
+     public void takeDamage(int amount) {
+         if(amount > 0) {
+             hitpoints -=amount;
+
+             if(hitpoints < 0) {
+                 hitpoints = 0;
+             }
+         }
      }
  }
+
+
+
+
 
 
     public class Demo {
@@ -122,6 +149,24 @@ package learnprogrammingacademy.learning;
 
 
      public static void main(String[] args) {
+
+
+        //Encapsulation
+         Ship ship = new Ship();
+         ship.fire();
+         ship.takeDamage(10);
+
+         System.out.println(" ship HP = " + ship.getHitpoints());
+
+         ship.fire();
+         ship.takeDamage(50);
+         System.out.println("Ship HP =" + ship.getHitpoints());
+
+         ship.fire();
+         ship.takeDamage(100);
+         System.out.println(" ship HP " +ship.getHitpoints());
+
+
 
 
          /* Player player = new Player();
