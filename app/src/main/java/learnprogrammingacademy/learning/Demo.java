@@ -86,8 +86,42 @@ package learnprogrammingacademy.learning;
         }
     }*/
 
+    //Encapsulation challenge
+ class Person {
+
+     private String firstName;
+     private String lastName;
+     private int age;
+
+        public String getFirstName() {
+            return firstName;
+        }
+
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
+    }
+
+
+
     //Encapsulation
-    class Ship {
+   /* class Ship {
      private int hitpoints = 100;
      private String[] bullets = {"laser", "fire"};
 
@@ -103,7 +137,7 @@ package learnprogrammingacademy.learning;
              System.out.println("firing " + bullets[1]);
          }
             */
-         String bullet = bullets[0];
+       /*  String bullet = bullets[0];
 
          if(hitpoints > 50) {
              bullet = bullets[1];
@@ -119,7 +153,7 @@ package learnprogrammingacademy.learning;
              }
          }
      }
- }
+ }  */
 
 
 
@@ -151,7 +185,7 @@ package learnprogrammingacademy.learning;
      public static void main(String[] args) {
 
 
-        //Encapsulation
+       /* //Encapsulation
          Ship ship = new Ship();
          ship.fire();
          ship.takeDamage(10);
@@ -164,7 +198,7 @@ package learnprogrammingacademy.learning;
 
          ship.fire();
          ship.takeDamage(100);
-         System.out.println(" ship HP " +ship.getHitpoints());
+         System.out.println(" ship HP " +ship.getHitpoints());*/
 
 
 
