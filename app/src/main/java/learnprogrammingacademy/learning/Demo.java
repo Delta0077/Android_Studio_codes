@@ -89,9 +89,23 @@ package learnprogrammingacademy.learning;
     //Encapsulation challenge
  class Person {
 
-     private String firstName;
-     private String lastName;
-     private int age;
+        private String firstName;
+        private String lastName;
+        private int age;
+
+
+        public Person(String firstName, String lastName, int age) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            setAge(age);
+        }
+
+        public String getFullname() {
+            return firstName + " " + lastName ;
+
+        }
+
+
 
         public String getFirstName() {
             return firstName;
@@ -114,7 +128,29 @@ package learnprogrammingacademy.learning;
         }
 
         public void setAge(int age) {
-            this.age = age;
+           if(age <0) {
+               this.age =0 ;
+           }    else if(age> 100) {
+               this.age =100;
+           }    else {
+               this.age=age;
+           }
+
+
+
+            /* if(age <0) {
+                age =0;
+            }
+            if(age > 100) {
+                age =100;
+            }
+            this.age = age;*/
+        }
+        public void printInfo(){
+
+            System.out.println("firstName " + getFirstName() + "lastName " + getLastName() + "fullName " + getFullname() + "age " + getAge());
+
+
         }
     }
 
@@ -420,6 +456,12 @@ package learnprogrammingacademy.learning;
         Cat cat2 = new Cat("Jerry" , 5);
         cat2.printInfo();*/
 
+
+         Person john = new Person("John " , "Smith ", 25);
+         john.printInfo();
+
+         Person jimmy = new Person("jimmy ", "Winter " , 120);
+         jimmy.printInfo();
 
      }
 
